@@ -1,1 +1,1 @@
-var svm = {id: 'svm', label: 'SVM', data: "hello? do I crash everything?", connect_to : ['supervised_learning']};
+var svm = {id: 'svm', label: 'SVM', text: "a popular thing in the 90s", connect_to : ['supervised_learning']};

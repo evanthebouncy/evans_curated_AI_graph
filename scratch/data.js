@@ -15,15 +15,15 @@
 //    }
 //}
 
-var nodes = [
+var nodes_list = [
     supervised_learning,
     svm,
     nn,
 ];
 
-edges = [];
-nodes.forEach(function(o) {
+edges_list = [];
+nodes_list.forEach(function(o) {
     o.connect_to.forEach(function(destination) {
-          edges.push( {from: o.id, to: destination} );  
+          edges_list.push( {from: o.id, to: destination} );  
     })
 })
