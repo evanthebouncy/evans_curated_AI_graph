@@ -1,6 +1,10 @@
 <html>
 <head>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
         #mynetwork {
@@ -12,32 +16,26 @@
             height: 800px;
             border: 1px solid lightgray;
         }
-        #container {
-          height: 100%;
-          width: 100%;
-          display: flex;
-        }
-        #leftThing {
-          width: 50%;
-/*          background-color: blue;*/
-        }
-        #rightThing {
-          width: 50%;
-/*          background-color: yellow;*/
-        }
     </style>
 </head>
     
     
 <body>
-    <div id="container">
-        <div id="leftThing">
-            <div id="mynetwork"></div>
-            <button id="bait">randomize</button>
-        </div>
-        <div id="rightThing"> 
-            <div id="content_title"></div>
-            <div id="content_body"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div id="mynetwork"></div>
+                <button class="btn btn-dark" id="bait">randomize</button>
+            </div>
+            <div class="col"> 
+                <h2 id="content_title"> Topic </h2>
+                <div class="border" id="content_body"> Description </div>
+                <div class="col border">
+                    <h4 class="col">Related</h4>
+                    <div class="col" id="related">nothing yet</div>
+                </div>
+
+            </div>
         </div>
     </div>
 <!--    <script src="supervised.js"></script>-->
@@ -47,6 +45,8 @@
     <script src="data/supervised_learning.js"></script>
     <script src="data/svm.js"></script>
     <script src="data/nn.js"></script>
+    <script src="data/unsupervised_learning.js"></script>
+
    
     <script type="text/javascript" src= "data.js"></script>
     <script type="text/javascript" src= "layout.js"></script>

@@ -19,6 +19,7 @@ var nodes_list = [
     supervised_learning,
     svm,
     nn,
+    unsupervised_learning,
 ];
 
 edges_list = [];
